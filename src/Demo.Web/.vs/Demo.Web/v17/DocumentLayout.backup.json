@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|e:\\asp.net\\jalal sir\\aspnet-b11\\src\\demo.web\\demo\\views\\demo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|solutionrelative:demo\\views\\demo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|e:\\asp.net\\jalal sir\\aspnet-b11\\src\\demo.web\\demo\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|solutionrelative:demo\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\Views\\Demo\\Index.cshtml",
+              "RelativeDocumentMoniker": "Demo\\Views\\Demo\\Index.cshtml",
+              "ToolTip": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\Views\\Demo\\Index.cshtml",
+              "RelativeToolTip": "Demo\\Views\\Demo\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T12:32:10.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DemoController.cs",
+              "DocumentMoniker": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\Controllers\\DemoController.cs",
+              "RelativeDocumentMoniker": "Demo\\Controllers\\DemoController.cs",
+              "ToolTip": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\Controllers\\DemoController.cs",
+              "RelativeToolTip": "Demo\\Controllers\\DemoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T03:19:43.42Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
