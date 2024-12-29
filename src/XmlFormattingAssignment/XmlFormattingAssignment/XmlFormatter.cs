@@ -1,137 +1,77 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Reflection;
 using System.Text;
 
-public static class XmlFormatter
+namespace XmlFormattingAssignment
 {
-    public static string Convert(object item)
+    public static class XmlFormatter
     {
-        if (item == null) return string.Empty;
-
-        var itemType = item.GetType();
-        var xmlBuilder = new StringBuilder();
-        var typeName = itemType.Name;
-
-        // Start tag
-        xmlBuilder.AppendLine($"<{typeName}>");
-
-        foreach (var property in itemType.GetProperties(BindingFlags.Public | BindingFlags.Instance))
+        public static string Convert(object item)
         {
-            var propertyName = property.Name;
-            var value = property.GetValue(item);
+            return SerializeObject(item);
+        }
+        public static string SerializeObject(object obj, string elementName = null, int indentLevel = 0)
+        {
+            StringBuilder sb = new StringBuilder();
+            string indent = new string(' ', indentLevel * 4); 
+            elementName ??= obj?.GetType().Name ?? "Object";
 
-            if (value == null)
+            if (obj == null)
             {
-                // Null values as empty tags
-                xmlBuilder.AppendLine($"<{propertyName}></{propertyName}>");
+               
+                sb.Append($"{indent}<{elementName}></{elementName}>\n");
+                return sb.ToString();
             }
-            else if (value is string || value.GetType().IsPrimitive || value is DateTime)
+
+            Type type = obj.GetType();
+
+            
+            if (type.IsPrimitive || obj is string || obj is DateTime || obj is double || obj is int || obj is float || obj is decimal)
             {
-                // Primitive and string values
-                xmlBuilder.AppendLine($"<{propertyName}>{value}</{propertyName}>");
+                sb.Append($"{indent}<{elementName}>{obj}</{elementName}>\n");
+                return sb.ToString();
             }
-            else if (value is IEnumerable enumerableValue)
+
+            
+            if (obj is IEnumerable enumerable)
             {
-                // Handle collections (List, Array)
-                xmlBuilder.AppendLine($"<{propertyName}>");
-                foreach (var element in enumerableValue)
+                string childElementName = elementName switch
                 {
-                    xmlBuilder.Append(Convert(element));
+                    "Tags" => "String",
+                    "Tests" => "AdmissionTest",
+                    _ => "List"
+                };
+
+                sb.Append($"{indent}<{elementName}>\n");
+                foreach (var item in enumerable)
+                {
+                    sb.Append(SerializeObject(item, childElementName, indentLevel + 1));
                 }
-                xmlBuilder.AppendLine($"</{propertyName}>");
+                sb.Append($"{indent}</{elementName}>\n");
+                return sb.ToString();
             }
-            else
+
+            
+            sb.Append($"{indent}<{elementName}>\n");
+            foreach (var property in type.GetProperties())
             {
-                // Nested objects
-                xmlBuilder.AppendLine($"<{propertyName}>");
-                xmlBuilder.Append(Convert(value));
-                xmlBuilder.AppendLine($"</{propertyName}>");
+                object value = property.GetValue(obj);
+
+                
+                if (value is null)
+                {
+                    sb.Append($"{indent}    <{property.Name}></{property.Name}>\n");
+                }
+                else
+                {
+                    sb.Append(SerializeObject(value, property.Name, indentLevel + 1));
+                }
             }
+            sb.Append($"{indent}</{elementName}>\n");
+
+            return sb.ToString();
         }
 
-        // End tag
-        xmlBuilder.AppendLine($"</{typeName}>");
 
-        return xmlBuilder.ToString();
     }
 }
-
-
-//using System.Collections;
-//using System.Reflection;
-//using System.Text;
-
-//namespace XmlFormattingAssignment
-//{
-//    public static class XmlFormatter
-//    {
-//        public static string Convert(object item)
-//        {
-//            if (item == null) return string.Empty;
-
-//            StringBuilder sb = new StringBuilder();
-//            ConvertToXml(item, sb);
-//            return sb.ToString();
-//        }
-
-//        private static void ConvertToXml(object obj, StringBuilder sb, int paddingNum = 0)
-//        {
-//            if (obj == null) return; // Base condition
-
-//            Type type = obj.GetType();
-
-//            var objName = type.Name; // e.g., "Course"
-
-//            PropertyInfo[] properties = type.GetProperties();
-
-//            string padding = new string(' ', paddingNum);
-
-//            sb.AppendLine($"{padding}<{objName}>");
-
-//            foreach (var property in properties)
-//            {
-//                string propertyName = property.Name; // e.g., "Course_Id"
-
-//                Type propertyType = property.PropertyType;
-
-//                bool isObject = propertyType.IsClass && propertyType != typeof(string);
-//                bool isArray = propertyType.IsArray;
-//                bool isList = typeof(IEnumerable).IsAssignableFrom(propertyType) && propertyType != typeof(string);
-
-//                var propertyValue = property.GetValue(obj);
-
-//                if (propertyValue == null)
-//                {
-//                    sb.AppendLine($"{padding}  <{propertyName} />");
-//                    continue;
-//                }
-
-//                if (isArray || isList)
-//                {
-//                    sb.AppendLine($"{padding}  <{propertyName}>");
-
-//                    IEnumerable enumerable = (IEnumerable)propertyValue;
-//                    foreach (var item in enumerable)
-//                    {
-//                        ConvertToXml(item, sb, paddingNum + 4);
-//                    }
-
-//                    sb.AppendLine($"{padding}  </{propertyName}>");
-//                }
-//                else if (isObject)
-//                {
-//                    sb.AppendLine($"{padding}  <{propertyName}>");
-//                    ConvertToXml(propertyValue, sb, paddingNum + 4);
-//                    sb.AppendLine($"{padding}  </{propertyName}>");
-//                }
-//                else
-//                {
-//                    sb.AppendLine($"{padding}  <{propertyName}>{propertyValue}</{propertyName}>");
-//                }
-//            }
-
-//            sb.AppendLine($"{padding}</{objName}>");
-//        }
-//    }
-//}

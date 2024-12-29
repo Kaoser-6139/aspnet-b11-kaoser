@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\XmlFormattingAssignmentTest.csproj": {}
+    "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\XmlFormattingAssignmentTest.csproj": {}
   },
   "projects": {
-    "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\XmlFormattingAssignmentTest.csproj": {
+    "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\XmlFormattingAssignmentTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\XmlFormattingAssignmentTest.csproj",
+        "projectUniqueName": "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\XmlFormattingAssignmentTest.csproj",
         "projectName": "XmlFormattingAssignmentTest",
-        "projectPath": "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\XmlFormattingAssignmentTest.csproj",
+        "projectPath": "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\XmlFormattingAssignmentTest.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\obj\\",
+        "outputPath": "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignmentTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj": {
-                "projectPath": "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj"
+              "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj": {
+                "projectPath": "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj"
               }
             }
           }
@@ -99,14 +99,14 @@
         }
       }
     },
-    "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj": {
+    "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj",
+        "projectUniqueName": "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj",
         "projectName": "XmlFormattingAssignment",
-        "projectPath": "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj",
+        "projectPath": "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\XmlFormattingAssignment.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\Asp.net\\Assignment\\Assignment1\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\obj\\",
+        "outputPath": "E:\\Asp.net\\Assignment\\Assignment1\\aspnet-b11-kaoser\\src\\XmlFormattingAssignment\\XmlFormattingAssignment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

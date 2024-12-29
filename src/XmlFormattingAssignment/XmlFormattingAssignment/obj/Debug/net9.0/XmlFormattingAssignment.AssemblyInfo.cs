@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XmlFormattingAssignment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3bb75a98cd6cddf47f2941b1444554913fa3ce0")]
 [assembly: System.Reflection.AssemblyProductAttribute("XmlFormattingAssignment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XmlFormattingAssignment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|e:\\asp.net\\jalal sir\\aspnet-b11\\src\\demo.web\\demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|solutionrelative:demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|e:\\asp.net\\jalal sir\\aspnet-b11\\src\\demo.web\\demo\\webmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|solutionrelative:demo\\webmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|e:\\asp.net\\jalal sir\\aspnet-b11\\src\\demo.web\\demo\\views\\demo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{88282E49-7830-4ED0-B13F-55388E093907}|Demo\\Demo.csproj|solutionrelative:demo\\views\\demo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -14,7 +22,7 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -33,12 +41,38 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebModule.cs",
+              "DocumentMoniker": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\WebModule.cs",
+              "RelativeDocumentMoniker": "Demo\\WebModule.cs",
+              "ToolTip": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\WebModule.cs",
+              "RelativeToolTip": "Demo\\WebModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T03:52:29.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\Program.cs",
+              "RelativeDocumentMoniker": "Demo\\Program.cs",
+              "ToolTip": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\Program.cs",
+              "RelativeToolTip": "Demo\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T03:52:25.524Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\Views\\Demo\\Index.cshtml",
               "RelativeDocumentMoniker": "Demo\\Views\\Demo\\Index.cshtml",
@@ -51,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DemoController.cs",
               "DocumentMoniker": "E:\\Asp.net\\Jalal Sir\\aspnet-b11\\src\\Demo.Web\\Demo\\Controllers\\DemoController.cs",
               "RelativeDocumentMoniker": "Demo\\Controllers\\DemoController.cs",
