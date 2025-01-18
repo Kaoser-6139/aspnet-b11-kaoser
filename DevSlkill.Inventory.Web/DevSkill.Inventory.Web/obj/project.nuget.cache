@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EPa5k58hwLA=",
+  "dgSpecHash": "iEKi/4GNWv8=",
   "success": true,
-  "projectFilePath": "E:\\Asp.net\\Assignment\\Assignment-3\\DevSlkill.Inventory\\DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj",
+  "projectFilePath": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\autofac\\8.1.0\\autofac.8.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\autofac.extensions.dependencyinjection\\10.0.0\\autofac.extensions.dependencyinjection.10.0.0.nupkg.sha512",

@@ -8840,11 +8840,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Asp.net\\Assignment\\Assignment-3\\DevSlkill.Inventory\\DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj",
+      "projectUniqueName": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj",
       "projectName": "DevSkill.Inventory.Web",
-      "projectPath": "E:\\Asp.net\\Assignment\\Assignment-3\\DevSlkill.Inventory\\DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj",
+      "projectPath": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "E:\\Asp.net\\Assignment\\Assignment-3\\DevSlkill.Inventory\\DevSkill.Inventory.Web\\obj\\",
+      "outputPath": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
