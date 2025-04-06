@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|e:\\asp.net\\assignment\\assignment-3\\aspnet-b11-kaoser\\devslkill.inventory.web\\devskill.inventory.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|solutionrelative:devskill.inventory.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|e:\\asp.net\\assignment\\assignment-3\\aspnet-b11-kaoser\\devslkill.inventory.web\\devskill.inventory.web\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|solutionrelative:devskill.inventory.web\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|e:\\asp.net\\assignment\\assignment-3\\aspnet-b11-kaoser\\devslkill.inventory.web\\devskill.inventory.web\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|solutionrelative:devskill.inventory.web\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|e:\\asp.net\\assignment\\assignment-3\\aspnet-b11-kaoser\\devslkill.inventory.web\\devskill.inventory.web\\logs\\web-log-20250114.log||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|solutionrelative:devskill.inventory.web\\logs\\web-log-20250114.log||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|e:\\asp.net\\assignment\\assignment-3\\aspnet-b11-kaoser\\devslkill.inventory.web\\devskill.inventory.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|solutionrelative:devskill.inventory.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|e:\\asp.net\\assignment\\assignment-3\\aspnet-b11-kaoser\\devslkill.inventory.web\\devskill.inventory.web\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -43,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|solutionrelative:devskill.inventory.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|e:\\asp.net\\assignment\\assignment-3\\aspnet-b11-kaoser\\devslkill.inventory.web\\devskill.inventory.web\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|solutionrelative:devskill.inventory.web\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|e:\\asp.net\\assignment\\assignment-3\\aspnet-b11-kaoser\\devslkill.inventory.web\\devskill.inventory.web\\views\\shared\\_publiclayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C537BBED-A2C9-46D0-A3AF-5FFA1474597C}|DevSkill.Inventory.Web\\DevSkill.Inventory.Web.csproj|solutionrelative:devskill.inventory.web\\views\\shared\\_publiclayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -65,7 +65,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,19 +81,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Views\\_ViewImports.cshtml",
-              "ToolTip": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "DevSkill.Inventory.Web\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T11:16:11.008Z"
+              "DocumentIndex": 1,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "DevSkill.Inventory.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T10:37:33.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Program.cs",
+              "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Program.cs",
+              "ToolTip": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Program.cs",
+              "RelativeToolTip": "DevSkill.Inventory.Web\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T03:50:50.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Views\\_ViewStart.cshtml",
@@ -105,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Views\\Shared\\_Layout.cshtml",
@@ -117,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\appsettings.json",
               "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\appsettings.json",
@@ -129,20 +142,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "DevSkill.Inventory.Web\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAANkCAAAAAAAAAAAAAOACAAArAAAAAAAAAA==",
+              "ViewState": "AgIAANYCAAAAAAAAAAAAAOACAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T11:20:57.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T11:20:57.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
@@ -150,12 +162,23 @@
               "RelativeToolTip": "DevSkill.Inventory.Web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "ViewState": "AgIAANIAAAAAAAAAAAAowNsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T10:38:53.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T10:38:53.186Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "DevSkill.Inventory.Web\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T11:16:11.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
@@ -167,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "web-log-20250114.log",
               "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Logs\\web-log-20250114.log",
               "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Logs\\web-log-20250114.log",
@@ -179,19 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Program.cs",
-              "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Program.cs",
-              "ToolTip": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Program.cs",
-              "RelativeToolTip": "DevSkill.Inventory.Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T03:50:50.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Areas\\Admin\\Views\\_ViewImports.cshtml",
@@ -200,18 +211,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-14T11:21:39.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "DevSkill.Inventory.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "ToolTip": "E:\\Asp.net\\Assignment\\Assignment-3\\aspnet-b11-kaoser\\DevSlkill.Inventory.Web\\DevSkill.Inventory.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "DevSkill.Inventory.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T10:37:33.554Z"
             },
             {
               "$type": "Document",
