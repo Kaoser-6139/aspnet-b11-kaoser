@@ -1,7 +1,9 @@
-﻿using Demo.Domain;
+﻿using AutoMapper;
+using Demo.Domain;
 using DevSkill.Inventory.Web.Areas.Admin.Models;
 using Inventory.Application.Features.Products.Commands;
 using Inventory.Application.Features.Products.Queries;
+using Inventory.Domain.Dtos;
 using Inventory.Domain.Entities;
 using Inventory.Domain.Services;
 using MediatR;
@@ -16,11 +18,18 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
         
         private readonly IMediator _mediator;
         private readonly ILogger<ProductsController> _logger;
+        private readonly IProductService _productService;
+        private readonly IMapper _mapper;
         public ProductsController(IMediator mediator,
-            ILogger<ProductsController> logger)
+            ILogger<ProductsController> logger,
+            IProductService productService,
+            IMapper mapper)
         {
             _mediator = mediator;
             _logger = logger;
+            _mapper = mapper;
+            _productService = productService;
+            
         }
 
         public IActionResult Index()
@@ -38,6 +47,7 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 await _mediator.Send(productAddCommand);
+                return RedirectToAction("Index");
             }
             return View(productAddCommand);
 
@@ -83,11 +93,16 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
 
 
         [HttpPost]
-        public async Task<JsonResult> GetProductsJsonDataAsync([FromBody] GetProductsQuery productsQuery)
+        public async Task<JsonResult> GetProductsJsonDataAsync([FromBody] ProductListModel model)
         {
             try
             {
-              var (data,total,totalDisplay)=await _mediator.Send(productsQuery);
+                var searchDto = _mapper.Map<ProductSearchDto>(model.SearchItem);
+                var (data, total, totalDisplay) = await _productService.GetProducts(
+                    model.PageIndex,
+                    model.PageSize,
+                    model.FormatSortExpression("Name", "Description", "Price", "Id"), searchDto);
+
                 var products = new
                 {
                     recordsTotal = total,
@@ -101,12 +116,13 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
                                 record.Id.ToString()
                             }).ToArray()
                 };
+
                 return Json(products);
+
             }
             catch (Exception ex)
             {
-
-                _logger.LogError(ex, "There was a problem in getting products");
+                _logger.LogError(ex, "There was a problem in getting authors");
                 return Json(DataTables.EmptyResult);
             }
 

@@ -44,6 +44,9 @@ try
         containerBuilder.RegisterModule(new WebModule(connectionString,migrationAssembly.FullName));
     });
     #endregion
+    #region Automapper Configuration
+    builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+    #endregion
     builder.Host.UseSerilog((context, lc) => lc
    .MinimumLevel.Debug()
    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)                                //https://chatgpt.com/share/6771889f-2e90-800c-b57b-fa8c554326d0
