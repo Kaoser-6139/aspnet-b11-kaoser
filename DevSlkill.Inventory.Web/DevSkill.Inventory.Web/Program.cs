@@ -6,6 +6,10 @@ using Microsoft.EntityFrameworkCore;
 using DevSkill.Inventory.Web;
 using Serilog;
 using Serilog.Events;
+using System.Reflection;
+using Inventory.Infrastructure;
+using Microsoft.CodeAnalysis.FlowAnalysis;
+using Inventory.Application.Features.Products.Commands;
 
 var configuration = new ConfigurationBuilder()
                       .SetBasePath(Directory.GetCurrentDirectory())
@@ -20,18 +24,29 @@ Log.Logger = new LoggerConfiguration()
 try 
 {
 
-    Log.Information("Aplication Starting...");
+    Log.Information("Application Starting..");
     var builder = WebApplication.CreateBuilder(args);
 
     // Add services to the container.
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-
+    var migrationAssembly=Assembly.GetExecutingAssembly();
+    #region Autofac configuration
+    #region MediatR Configuration
+    builder.Services.AddMediatR(cfg =>
+    {
+        cfg.RegisterServicesFromAssembly(migrationAssembly);
+        cfg.RegisterServicesFromAssembly(typeof(ProductAddCommand).Assembly);
+    });
+    #endregion
     builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
     builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
     {
-        containerBuilder.RegisterModule(new WebModule());
+        containerBuilder.RegisterModule(new WebModule(connectionString,migrationAssembly.FullName));
     });
-
+    #endregion
+    #region Automapper Configuration
+    builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+    #endregion
     builder.Host.UseSerilog((context, lc) => lc
    .MinimumLevel.Debug()
    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)                                //https://chatgpt.com/share/6771889f-2e90-800c-b57b-fa8c554326d0
@@ -40,7 +55,7 @@ try
    );
 
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(connectionString));
+        options.UseSqlServer(connectionString,(x)=>x.MigrationsAssembly(migrationAssembly)));
     builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
     builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
