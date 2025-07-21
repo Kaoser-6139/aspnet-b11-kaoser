@@ -15,12 +15,22 @@ namespace Inventory.Infrastructure
     public  class ApplicationUnitOfWork:UnitOfWork,IApplicationUnitOfWork
     {
         public ApplicationUnitOfWork(ApplicationDbContext context,
-            IProductRepository productRepository) : base(context)
+            IProductRepository productRepository,
+            ICustomerRepository customerRepository,
+            ISaleRepository saleRepository) : base(context)
         {
             ProductRepository = productRepository;
+            CustomerRepository = customerRepository;
+            SalesRepository=saleRepository;
+
+
         }
 
         public IProductRepository ProductRepository { get; private set; }
+
+        public ICustomerRepository CustomerRepository{get;private set;}
+
+        public ISaleRepository SalesRepository {  get; private set; }
 
         public async Task<(IList<Product> data, int total, int totalDisplay)> GetProducts(int pageIndex,
             int pageSize, string? order, ProductSearchDto search)

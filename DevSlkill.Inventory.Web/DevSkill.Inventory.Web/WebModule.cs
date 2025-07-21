@@ -34,6 +34,18 @@ namespace DevSkill.Inventory.Web
             builder.RegisterType<ProductService>().As<IProductService>()
                 .InstancePerLifetimeScope();
             builder.RegisterType<ProductAddCommand>().AsSelf();
+
+
+            builder.RegisterType<CustomerRepository>().As<ICustomerRepository>()
+             .InstancePerLifetimeScope();
+            builder.RegisterType<CustomerService>().As<ICustomerService>()
+                .InstancePerLifetimeScope();
+
+            builder.RegisterType<SaleRepository>().As<ISaleRepository>()
+          .InstancePerLifetimeScope();
+            builder.RegisterType<SaleService>().As<ISaleService>()
+                .InstancePerLifetimeScope();
+
             base.Load(builder);
         }
     }

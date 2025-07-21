@@ -9,6 +9,8 @@ namespace Inventory.Infrastructure
         private readonly string _connectionString;
         private readonly string _migrationAssembly;
         public DbSet<Product>Products { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Sale>Sales { get; set; }
 
         public ApplicationDbContext(string connectionString, string migrationAssembly)
         {

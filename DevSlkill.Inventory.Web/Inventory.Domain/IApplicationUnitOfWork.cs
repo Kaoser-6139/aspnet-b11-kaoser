@@ -13,6 +13,8 @@ namespace Inventory.Domain
     public  interface IApplicationUnitOfWork:IUnitOfWork
     {
         public IProductRepository ProductRepository { get; }
+        public ICustomerRepository CustomerRepository { get; }
+        public ISaleRepository SalesRepository { get; }
 
         Task<(IList<Product> data, int total, int totalDisplay)> GetProducts(int pageIndex, int pageSize, string? order, ProductSearchDto searchDto);
     }
