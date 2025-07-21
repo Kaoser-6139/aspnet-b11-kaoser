@@ -1,0 +1,166 @@
+﻿@using DevSkill.Inventory.Web.Areas.Admin.Models
+@model UpdateSaleModel
+@{
+    ViewData["Title"] = "Add Sale";
+}
+
+<!--begin::App Content Header-->
+<div class="app-content-header">
+    <!--begin::Container-->
+    <div class="container-fluid">
+        <!--begin::Row-->
+        <div class="row">
+            <div class="col-sm-6"><h3 class="mb-0">Add Sale</h3></div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-end">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Add Sale</li>
+                </ol>
+            </div>
+        </div>
+        <!--end::Row-->
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::App Content Header-->
+<!--begin::App Content-->
+<div class="app-content">
+    <!--begin::Container-->
+    <div class="container-fluid">
+        <!--begin::Row-->
+        <div class="row g-4">
+            <!--begin::Col-->
+            <div class="col-12">
+                <partial name="_ResponsePartial" />
+            </div>
+            <!--end::Col-->
+            <!--begin::Col-->
+            <div class="col-md-6">
+                <!--begin::Quick Example-->
+                <div class="card card-primary card-outline mb-4">
+                    <!--begin::Header-->
+                    <div class="card-header"><div class="card-title">Add a new sales report</div></div>
+                    <!--end::Header-->
+                    <!--begin::Form-->
+
+                    <form asp-antiforgery="true" asp-area="Admin" asp-controller="Sales" asp-action="update" method="post">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <!--begin::Body-->
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <input type="hidden" asp-for="Id" />
+                                <label asp-for="SerialNumber" class="form-label">Serial Number</label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="SerialNumber"
+                                       aria-describedby="serialNumberHelp" />
+                                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+                                <div id="serialNumberHelp" class="form-text">
+                                    Provided a serial number.
+                                </div>
+                            </div>
+                            @* <div class="mb-3">
+                                <label asp-for="InvoiceNumber" class="form-label">Invoice Number </label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="InvoiceNumber"
+                                       aria-describedby="invoiceNumberHelp" />
+                                <span asp-validation-for="InvoiceNumber" class="text-danger"></span>
+                                <div id="invoiceNumberHelp" class="form-text">
+
+                                </div>
+                            </div> *@
+                            <div class="mb-3">
+                                <label asp-for="Date" class="form-label">Date </label>
+                                <input type="date"
+                                       class="form-control"
+                                       asp-for="Date"
+                                       aria-describedby="dateHelp" />
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                                <div id="dateHelp" class="form-text">
+                                    Provided an date
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="CustomerName" class="form-label">Customer Name </label>
+                                <input type="text"
+                                       class="form-control"
+                                       asp-for="CustomerName"
+                                       aria-describedby="nameHelp" />
+                                <span asp-validation-for="CustomerName" class="text-danger"></span>
+                                <div id="nameHelp" class="form-text">
+                                    Provided customer name
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Total" class="form-label">Total </label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="Total"
+                                       aria-describedby="totalHelp" />
+                                <span asp-validation-for="Total" class="text-danger"></span>
+                                <div id="totalHelp" class="form-text">
+                                    Provided a total balance
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Paid" class="form-label">Paid </label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="Paid"
+                                       aria-describedby="paidHelp" />
+                                <span asp-validation-for="Paid" class="text-danger"></span>
+                                <div id="paidHelp" class="form-text">
+                                    Provided paid balance
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Due" class="form-label">Due </label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="Due"
+                                       aria-describedby="dueHelp" />
+                                <span asp-validation-for="Due" class="text-danger"></span>
+                                <div id="dueHelp" class="form-text">
+                                    Provided due balance
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Status" class="form-label">Status </label>
+                                <input type="text"
+                                       class="form-control"
+                                       asp-for="Status"
+                                       aria-describedby="statusHelp" />
+                                <span asp-validation-for="Status" class="text-danger"></span>
+                                <div id="statusHelp" class="form-text">
+                                    Provided status
+                                </div>
+                            </div>
+                        </div>
+                        <!--end::Body-->
+                        <!--begin::Footer-->
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <!--end::Footer-->
+                    </form>
+                    <!--end::Form-->
+                </div>
+                <!--end::Quick Example-->
+
+            </div>
+            <!--end::Col-->
+
+        </div>
+        <!--end::Row-->
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::App Content-->
+@section Scripts
+{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
