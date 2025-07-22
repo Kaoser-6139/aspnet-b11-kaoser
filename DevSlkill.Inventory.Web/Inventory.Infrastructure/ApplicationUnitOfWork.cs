@@ -17,11 +17,13 @@ namespace Inventory.Infrastructure
         public ApplicationUnitOfWork(ApplicationDbContext context,
             IProductRepository productRepository,
             ICustomerRepository customerRepository,
-            ISaleRepository saleRepository) : base(context)
+            ISaleRepository saleRepository,
+            IBalanceTransferRepository balanceTransferRepository) : base(context)
         {
             ProductRepository = productRepository;
             CustomerRepository = customerRepository;
             SalesRepository=saleRepository;
+            BalanceTransferRepository = balanceTransferRepository;
 
 
         }
@@ -31,6 +33,8 @@ namespace Inventory.Infrastructure
         public ICustomerRepository CustomerRepository{get;private set;}
 
         public ISaleRepository SalesRepository {  get; private set; }
+
+        public IBalanceTransferRepository BalanceTransferRepository { get; private set; }
 
         public async Task<(IList<Product> data, int total, int totalDisplay)> GetProducts(int pageIndex,
             int pageSize, string? order, ProductSearchDto search)

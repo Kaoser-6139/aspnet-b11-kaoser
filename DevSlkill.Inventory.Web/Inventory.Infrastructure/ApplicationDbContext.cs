@@ -11,6 +11,7 @@ namespace Inventory.Infrastructure
         public DbSet<Product>Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Sale>Sales { get; set; }
+        public DbSet<BalanceTransfer> BalanceTransfer { get; set; }
 
         public ApplicationDbContext(string connectionString, string migrationAssembly)
         {
