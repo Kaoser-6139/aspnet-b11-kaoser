@@ -15,6 +15,8 @@ namespace DevSkill.Inventory.Web
             CreateMap<UpdateCustomerModel,Customer>().ReverseMap();
             CreateMap<AddSaleModel,Sale>().ReverseMap();
             CreateMap<UpdateSaleModel,Sale>().ReverseMap();
+            CreateMap<AddBalanceTransferModel,BalanceTransfer>().ReverseMap();
+            CreateMap<UpdateBalanceTransferModel,BalanceTransfer>().ReverseMap();
         }
     }
 }

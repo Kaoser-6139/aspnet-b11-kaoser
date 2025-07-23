@@ -1,0 +1,142 @@
+﻿@using DevSkill.Inventory.Web.Areas.Admin.Models
+@model UpdateBalanceTransferModel
+@{
+    ViewData["Title"] = "Update Balance Transfer";
+}
+
+<!--begin::App Content Header-->
+<div class="app-content-header">
+    <!--begin::Container-->
+    <div class="container-fluid">
+        <!--begin::Row-->
+        <div class="row">
+            <div class="col-sm-6"><h3 class="mb-0">Update Balance Transfer</h3></div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-end">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Update Balance Transfer</li>
+                </ol>
+            </div>
+        </div>
+        <!--end::Row-->
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::App Content Header-->
+<!--begin::App Content-->
+<div class="app-content">
+    <!--begin::Container-->
+    <div class="container-fluid">
+        <!--begin::Row-->
+        <div class="row g-4">
+            <!--begin::Col-->
+            <div class="col-12">
+                <partial name="_ResponsePartial" />
+            </div>
+            <!--end::Col-->
+            <!--begin::Col-->
+            <div class="col-md-6">
+                <!--begin::Quick Example-->
+                <div class="card card-primary card-outline mb-4">
+                    <!--begin::Header-->
+                    <div class="card-header"><div class="card-title">Update balance</div></div>
+                    <!--end::Header-->
+                    <!--begin::Form-->
+
+                    <form asp-antiforgery="true" asp-area="Admin" asp-controller="BalanceTransfers" asp-action="Update" method="post">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <!--begin::Body-->
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label asp-for="SerialNumber" class="form-label">Serial Number</label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="SerialNumber"
+                                       aria-describedby="serialNumberHelp" />
+                                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+                                <div id="serialNumberHelp" class="form-text">
+                                    Provided a serial number.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Date" class="form-label">Date </label>
+                                <input type="date"
+                                       class="form-control"
+                                       asp-for="Date"
+                                       aria-describedby="dateHelp" />
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                                <div id="dateHelp" class="form-text">
+                                    Provided an date
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="FromAccount" class="form-label">From Account </label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="FromAccount"
+                                       aria-describedby="fromAccountHelp" />
+                                <span asp-validation-for="FromAccount" class="text-danger"></span>
+                                <div id="fromAccountHelp" class="form-text">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="ToAccount" class="form-label">To Account </label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="ToAccount"
+                                       aria-describedby="toAccountHelp" />
+                                <span asp-validation-for="ToAccount" class="text-danger"></span>
+                                <div id="toAccountHelp" class="form-text">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="TransferAmount" class="form-label">Transfer Amount </label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="TransferAmount"
+                                       aria-describedby="transferAmountHelp" />
+                                <span asp-validation-for="TransferAmount" class="text-danger"></span>
+                                <div id="transferAmountHelp" class="form-text">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Note" class="form-label">Note </label>
+                                <input type="text"
+                                       class="form-control"
+                                       asp-for="Note"
+                                       aria-describedby="noteHelp" />
+                                <span asp-validation-for="Note" class="text-danger"></span>
+                                <div id="noteHelp" class="form-text">
+                                    Provided status
+                                </div>
+                            </div>
+                        </div>
+                        <!--end::Body-->
+                        <!--begin::Footer-->
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <!--end::Footer-->
+                    </form>
+                    <!--end::Form-->
+                </div>
+                <!--end::Quick Example-->
+
+            </div>
+            <!--end::Col-->
+
+        </div>
+        <!--end::Row-->
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::App Content-->
+@section Scripts
+{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
