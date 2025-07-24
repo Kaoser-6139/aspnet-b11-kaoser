@@ -36,7 +36,17 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header"><h3 class="card-title">Available Sales</h3></div>
+                    <div class="card-header">
+                     @*    <h3 class="card-title">Available Sales</h3> *@
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h3 class="card-title">Available Sales</h3>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="btn btn-primary btn-lg" asp-controller="Sales" asp-action="Add">Add New </a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- /.card-header -->
                     <div class="card-body">
                         <partial name="_ResponsePartial" />
