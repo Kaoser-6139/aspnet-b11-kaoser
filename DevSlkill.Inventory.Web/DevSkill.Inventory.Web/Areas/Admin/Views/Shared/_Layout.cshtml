@@ -244,7 +244,7 @@
                          class="brand-image opacity-75 shadow" />
                     <!--end::Brand Image-->
                     <!--begin::Brand Text-->
-                    <span class="brand-text fw-light">AdminLTE 4</span>
+                    <span class="brand-text fw-light">DevSkill Inventory</span>
                     <!--end::Brand Text-->
                 </a>
                 <!--end::Brand Link-->
@@ -269,25 +269,31 @@
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="./index.html" class="nav-link active">
-                                        <i class="nav-icon bi bi-circle"></i>
-                                        <p>Dashboard v1</p>
+                                      @*   <i class="nav-icon bi bi-circle"></i> *@
+                                      <a type="button" class="btn" asp-controller="Products" asp-action="Index">Products</a>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index2.html" class="nav-link">
-                                        <i class="nav-icon bi bi-circle"></i>
-                                        <p>Dashboard v2</p>
+                                      @*   <i class="nav-icon bi bi-circle"></i> *@
+                                        <a type="button" class="btn" asp-controller="Customers" asp-action="Index">Customers</a>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="./index3.html" class="nav-link">
-                                        <i class="nav-icon bi bi-circle"></i>
-                                        <p>Dashboard v3</p>
+                                      @*   <i class="nav-icon bi bi-circle"></i> *@
+                                        <a type="button" class="btn" asp-controller="Sales" asp-action="Index">Sales</a>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./index3.html" class="nav-link">
+                                       @*  <i class="nav-icon bi bi-circle"></i> *@
+                                        <a type="button" class="btn" asp-controller="BalanceTransfers" asp-action="Index">Transfers</a>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        @* <li class="nav-item">
                             <a href="./generate/theme.html" class="nav-link">
                                 <i class="nav-icon bi bi-palette"></i>
                                 <p>Theme Generate</p>
@@ -404,8 +410,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
+                        </li> *@
+                        @* <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-pencil-square"></i>
                                 <p>
@@ -421,8 +427,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
+                        </li> *@
+                        @* <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-table"></i>
                                 <p>
@@ -438,8 +444,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-header">EXAMPLES</li>
+                        </li> *@
+                       @*  <li class="nav-header">EXAMPLES</li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-box-arrow-in-right"></i>
@@ -502,8 +508,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-header">DOCUMENTATIONS</li>
+                        </li> *@
+                       @*  <li class="nav-header">DOCUMENTATIONS</li>
                         <li class="nav-item">
                             <a href="./docs/introduction.html" class="nav-link">
                                 <i class="nav-icon bi bi-download"></i>
@@ -521,8 +527,8 @@
                                 <i class="nav-icon bi bi-star-half"></i>
                                 <p>Color Mode</p>
                             </a>
-                        </li>
-                        <li class="nav-item">
+                        </li> *@
+                       @*  <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-ui-checks-grid"></i>
                                 <p>
@@ -544,8 +550,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
+                        </li> *@
+                      @*   <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-filetype-js"></i>
                                 <p>
@@ -585,8 +591,8 @@
                                 <i class="nav-icon bi bi-patch-check-fill"></i>
                                 <p>License</p>
                             </a>
-                        </li>
-                        <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+                        </li> *@
+                       @*  <li class="nav-header">MULTI LEVEL EXAMPLE</li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-circle-fill"></i>
@@ -650,8 +656,8 @@
                                 <i class="nav-icon bi bi-circle-fill"></i>
                                 <p>Level 1</p>
                             </a>
-                        </li>
-                        <li class="nav-header">LABELS</li>
+                        </li> *@
+                        @* <li class="nav-header">LABELS</li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon bi bi-circle text-danger"></i>
@@ -669,7 +675,7 @@
                                 <i class="nav-icon bi bi-circle text-info"></i>
                                 <p>Informational</p>
                             </a>
-                        </li>
+                        </li> *@
                     </ul>
                     <!--end::Sidebar Menu-->
                 </nav>

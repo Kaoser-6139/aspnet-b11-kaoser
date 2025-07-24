@@ -157,7 +157,7 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
             try
             {
                 var (data, total, totalDisplay) = _customerService.GetCustomers(model.PageIndex,
-                    model.PageSize, model.FormatSortExpression("Name", "Mobile", "Address", "Email",
+                    model.PageSize, model.FormatSortExpression("SerialNumber","Name", "Mobile", "Address", "Email",
                     "CurrentBalance", "Status","Id"), model.Search);
 
                 var customers = new

@@ -48,6 +48,17 @@
                         <!--begin::Body-->
                         <div class="card-body">
                             <div class="mb-3">
+                                <label asp-for="SerialNumber" class="form-label">Serial Number</label>
+                                <input type="number"
+                                       class="form-control"
+                                       asp-for="SerialNumber"
+                                       aria-describedby="serialNumberHelp" />
+                                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+                                <div id="serialNumberHelp" class="form-text">
+                                    Provided a friendly name
+                                </div>
+                            </div>
+                            <div class="mb-3">
                                 <label asp-for="Name" class="form-label">Customer Name</label>
                                 <input type="text"
                                        class="form-control"
