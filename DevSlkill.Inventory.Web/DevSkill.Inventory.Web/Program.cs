@@ -31,13 +31,6 @@ try
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
     var migrationAssembly=Assembly.GetExecutingAssembly();
     #region Autofac configuration
-    #region MediatR Configuration
-    builder.Services.AddMediatR(cfg =>
-    {
-        cfg.RegisterServicesFromAssembly(migrationAssembly);
-        cfg.RegisterServicesFromAssembly(typeof(ProductAddCommand).Assembly);
-    });
-    #endregion
     builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
     builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
     {
@@ -47,12 +40,21 @@ try
     #region Automapper Configuration
     builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
     #endregion
+    #region Serilog Configuration
     builder.Host.UseSerilog((context, lc) => lc
    .MinimumLevel.Debug()
    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)                                //https://chatgpt.com/share/6771889f-2e90-800c-b57b-fa8c554326d0
    .Enrich.FromLogContext()
    .ReadFrom.Configuration(builder.Configuration)
    );
+    #endregion
+    #region MediatR Configuration
+    builder.Services.AddMediatR(cfg =>
+    {
+        cfg.RegisterServicesFromAssembly(migrationAssembly);
+        cfg.RegisterServicesFromAssembly(typeof(ProductAddCommand).Assembly);
+    });
+    #endregion
 
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlServer(connectionString,(x)=>x.MigrationsAssembly(migrationAssembly)));

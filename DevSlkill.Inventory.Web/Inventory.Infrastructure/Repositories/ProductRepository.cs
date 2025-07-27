@@ -1,4 +1,5 @@
-﻿using Inventory.Domain.Entities;
+﻿using DevSkill.Inventory.Web.Infrastructure;
+using Inventory.Domain.Entities;
 using Inventory.Domain.Features.Products.Queries;
 using Inventory.Domain.Repositories;
 using System;

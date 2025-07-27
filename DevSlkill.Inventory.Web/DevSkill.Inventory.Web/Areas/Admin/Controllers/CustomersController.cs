@@ -1,9 +1,12 @@
 ﻿using AutoMapper;
-using Demo.Application.Exceptions;
-using Demo.Domain;
-using Demo.Infrastructure;
-using Demo.Web.Areas.Admin.Models;
+using DevSkill.Inventory.Web.Application.Exceptions;
+
+//using Demo.Application.Exceptions;
+//using Demo.Domain;
+//using Demo.Infrastructure;
 using DevSkill.Inventory.Web.Areas.Admin.Models;
+using DevSkill.Inventory.Web.Domain;
+using DevSkill.Inventory.Web.Infrastructure;
 using Inventory.Domain.Entities;
 using Inventory.Domain.Services;
 using Microsoft.AspNetCore.Mvc;

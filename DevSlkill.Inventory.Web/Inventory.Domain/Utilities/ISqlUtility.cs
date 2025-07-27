@@ -1,5 +1,5 @@
 ﻿
-namespace Demo.Domain.Utilities
+namespace DevSkill.Inventory.Web.Domain.Utilities
 {
     public interface ISqlUtility
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
  
-namespace Demo.Infrastructure
+namespace DevSkill.Inventory.Web.Infrastructure
 {
     public static class TempDataExtensions
     {

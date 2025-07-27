@@ -1,4 +1,5 @@
 ﻿using Demo.Infrastructure.Utilities;
+using DevSkill.Inventory.Web.Infrastructure;
 using Inventory.Domain;
 using Inventory.Domain.Dtos;
 using Inventory.Domain.Entities;

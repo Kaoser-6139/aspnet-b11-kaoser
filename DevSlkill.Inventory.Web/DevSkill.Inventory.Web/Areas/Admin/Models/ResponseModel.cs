@@ -1,4 +1,4 @@
-﻿namespace Demo.Web.Areas.Admin.Models
+﻿namespace DevSkill.Inventory.Web.Areas.Admin.Models
 {
 
     public enum ResponseTypes

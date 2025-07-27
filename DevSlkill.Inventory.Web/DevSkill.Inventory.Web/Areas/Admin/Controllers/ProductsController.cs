@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Demo.Domain;
+using DevSkill.Inventory.Web.Domain;
 using DevSkill.Inventory.Web.Areas.Admin.Models;
 using Inventory.Application.Features.Products.Commands;
 using Inventory.Application.Features.Products.Queries;

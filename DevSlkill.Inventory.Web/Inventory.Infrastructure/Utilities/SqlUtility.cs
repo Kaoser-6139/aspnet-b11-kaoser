@@ -8,8 +8,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Demo.Domain;
-using Demo.Domain.Utilities;
+using DevSkill.Inventory.Web.Domain;
+using DevSkill.Inventory.Web.Domain.Utilities;
 
 namespace Demo.Infrastructure.Utilities
 {

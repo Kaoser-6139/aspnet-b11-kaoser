@@ -1,4 +1,5 @@
-﻿using Demo.Domain;
+﻿//using Demo.Domain;
+using DevSkill.Inventory.Web.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

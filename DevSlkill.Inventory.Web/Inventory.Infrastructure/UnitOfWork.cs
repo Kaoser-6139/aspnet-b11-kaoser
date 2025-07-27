@@ -1,4 +1,4 @@
-﻿using Demo.Domain.Utilities;
+﻿using DevSkill.Inventory.Web.Domain.Utilities;
 using Demo.Infrastructure.Utilities;
 using Inventory.Domain;
 using Inventory.Domain.Repositories;

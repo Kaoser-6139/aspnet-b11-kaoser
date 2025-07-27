@@ -1,4 +1,4 @@
-﻿using Demo.Domain;
+﻿using DevSkill.Inventory.Web.Domain;
 using System.Data;
 
 namespace DevSkill.Inventory.Web.Areas.Admin.Models

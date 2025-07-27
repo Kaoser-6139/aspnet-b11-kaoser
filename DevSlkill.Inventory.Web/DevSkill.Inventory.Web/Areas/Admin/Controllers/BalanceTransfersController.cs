@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using Demo.Domain;
-using Demo.Infrastructure;
-using Demo.Web.Areas.Admin.Models;
+using DevSkill.Inventory.Web.Domain;
+using DevSkill.Inventory.Web.Infrastructure;
+using DevSkill.Inventory.Web.Areas.Admin.Models;
 using DevSkill.Inventory.Web.Areas.Admin.Models;
 using Inventory.Application.Services;
 using Inventory.Domain.Entities;

@@ -1,4 +1,4 @@
-﻿namespace Demo.Domain
+﻿namespace DevSkill.Inventory.Web.Domain
 {
     public interface IDataTables
     {
