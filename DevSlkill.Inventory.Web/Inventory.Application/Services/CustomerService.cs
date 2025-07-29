@@ -1,5 +1,5 @@
-﻿using DevSkill.Inventory.Web.Application.Exceptions;
-using DevSkill.Inventory.Web.Domain;
+﻿using DevSkill.Inventory.Web.Domain;
+using Inventory.Application.Exceptions;
 using Inventory.Domain;
 using Inventory.Domain.Entities;
 using Inventory.Domain.Services;

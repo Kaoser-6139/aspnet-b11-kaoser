@@ -10,6 +10,7 @@ using System.Reflection;
 using Inventory.Infrastructure;
 using Microsoft.CodeAnalysis.FlowAnalysis;
 using Inventory.Application.Features.Products.Commands;
+using Inventory.Infrastructure.Extensions;
 
 var configuration = new ConfigurationBuilder()
                       .SetBasePath(Directory.GetCurrentDirectory())
@@ -37,9 +38,11 @@ try
         containerBuilder.RegisterModule(new WebModule(connectionString,migrationAssembly.FullName));
     });
     #endregion
+
     #region Automapper Configuration
     builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
     #endregion
+
     #region Serilog Configuration
     builder.Host.UseSerilog((context, lc) => lc
    .MinimumLevel.Debug()
@@ -48,6 +51,7 @@ try
    .ReadFrom.Configuration(builder.Configuration)
    );
     #endregion
+
     #region MediatR Configuration
     builder.Services.AddMediatR(cfg =>
     {
@@ -60,8 +64,14 @@ try
         options.UseSqlServer(connectionString,(x)=>x.MigrationsAssembly(migrationAssembly)));
     builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-    builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddEntityFrameworkStores<ApplicationDbContext>();
+    #region Identity Configuration
+    builder.Services.AddIdentity();
+    #endregion
+
+    #region Authorization Configuration
+    builder.Services.AddPolicy();
+    #endregion
+    builder.Services.AddRazorPages();
     builder.Services.AddControllersWithViews();
 
     var app = builder.Build();

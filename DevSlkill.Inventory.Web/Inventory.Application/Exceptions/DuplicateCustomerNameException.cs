@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevSkill.Inventory.Web.Application.Exceptions
+namespace Inventory.Application.Exceptions
 {
     public  class DuplicateCustomerNameException:Exception
     {

@@ -9,10 +9,11 @@ using Inventory.Domain.Services;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"),Authorize]
     public class ProductsController : Controller
     {
         
@@ -72,7 +73,7 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
             };
             return View(model);
         }
-        [HttpPost,ValidateAntiForgeryToken]
+        [HttpPost,ValidateAntiForgeryToken, Authorize(Policy = "UserAddPermissionHR")]
         public async Task<IActionResult>Update(ProductUpdateCommand productUpdateCommand)
         {
             if (ModelState.IsValid)
@@ -83,7 +84,7 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
 
             return View(productUpdateCommand);
         }
-        [HttpPost,ValidateAntiForgeryToken]
+        [HttpPost,ValidateAntiForgeryToken, Authorize(Policy = "UserAddPermission")]
         public async Task<IActionResult> Delete(Guid id)
         {
             await _mediator.Send(new ProductDeleteCommand { Id = id });

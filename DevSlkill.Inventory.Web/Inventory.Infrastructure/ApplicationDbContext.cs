@@ -1,10 +1,16 @@
 ﻿using Inventory.Domain.Entities;
+using Inventory.Infrastructure.Identity;
+using Inventory.Infrastructure.Seeds;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inventory.Infrastructure
 {
-    public class ApplicationDbContext:IdentityDbContext
+    public class ApplicationDbContext:IdentityDbContext<ApplicationUser,
+        ApplicationRole, Guid,
+        ApplicationUserClaim, ApplicationUserRole,
+        ApplicationUserLogin, ApplicationRoleClaim,
+        ApplicationUserToken>
     {
         private readonly string _connectionString;
         private readonly string _migrationAssembly;
@@ -27,5 +33,11 @@ namespace Inventory.Infrastructure
             }
             base.OnConfiguring(optionsBuilder);
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<ApplicationUserClaim>().HasData(ClaimSeed.GetClaims());
+            base.OnModelCreating(builder);
+        }
+
     }
 }

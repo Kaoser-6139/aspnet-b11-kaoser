@@ -1,20 +1,20 @@
 ﻿using AutoMapper;
-using DevSkill.Inventory.Web.Application.Exceptions;
-
 //using Demo.Application.Exceptions;
 //using Demo.Domain;
 //using Demo.Infrastructure;
 using DevSkill.Inventory.Web.Areas.Admin.Models;
 using DevSkill.Inventory.Web.Domain;
 using DevSkill.Inventory.Web.Infrastructure;
+using Inventory.Application.Exceptions;
 using Inventory.Domain.Entities;
 using Inventory.Domain.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;
 
 namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"),Authorize]
     public class CustomersController(
         ILogger<CustomersController> logger,
         ICustomerService customerService,
@@ -29,12 +29,13 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
         {
             return View();
         }
+     
         public IActionResult Add()
         {
             var model = new AddCustomerModel();
             return View(model);
         }
-        [HttpPost ,ValidateAntiForgeryToken]
+        [HttpPost ,ValidateAntiForgeryToken,]
         public IActionResult Add(AddCustomerModel model)
         {
             if (ModelState.IsValid)
@@ -74,7 +75,7 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
             }
             return View(model);
         }
-
+       
         public IActionResult Update(Guid id)
         {
             var model = new UpdateCustomerModel();
@@ -82,7 +83,7 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
             _mapper.Map(customer, model);
             return View(model);
         }
-        [HttpPost,ValidateAntiForgeryToken]
+        [HttpPost,ValidateAntiForgeryToken, Authorize(Policy = "UserAddPermissionHR")]
         public IActionResult Update(UpdateCustomerModel model)
         {
             if (ModelState.IsValid) 
@@ -124,7 +125,7 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
             }
             return View(model);
         }
-        [HttpPost,ValidateAntiForgeryToken]
+        [HttpPost,ValidateAntiForgeryToken, Authorize(Policy = "UserAddPermission")]
         public IActionResult Delete(Guid id)
         {
             try

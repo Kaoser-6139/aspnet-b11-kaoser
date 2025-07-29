@@ -2,16 +2,16 @@
 using DevSkill.Inventory.Web.Domain;
 using DevSkill.Inventory.Web.Infrastructure;
 using DevSkill.Inventory.Web.Areas.Admin.Models;
-using DevSkill.Inventory.Web.Areas.Admin.Models;
 using Inventory.Application.Services;
 using Inventory.Domain.Entities;
 using Inventory.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"),Authorize(Policy = "UserAddPermission")]
     public class BalanceTransfersController(IBalanceTransferService balance,
         ILogger<BalanceTransfersController> logger,
        IMapper mapper) : Controller

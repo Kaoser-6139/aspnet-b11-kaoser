@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using DevSkill.Inventory.Web.Application.Exceptions;
 using DevSkill.Inventory.Web.Domain;
 using DevSkill.Inventory.Web.Infrastructure;
 using DevSkill.Inventory.Web.Areas.Admin.Models;
@@ -9,10 +8,12 @@ using Inventory.Domain.Entities;
 using Inventory.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;
+using Inventory.Application.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"),Authorize]
     public class SalesController : Controller
     {
         private readonly ILogger<SalesController> _logger;
@@ -82,7 +83,7 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
             _mapper.Map(sale, model);
             return View(model);
         }
-        [HttpPost,ValidateAntiForgeryToken]
+        [HttpPost,ValidateAntiForgeryToken, Authorize(Policy = "UserAddPermissionHR")]
         public IActionResult Update(UpdateSaleModel model)
         {
             if(ModelState.IsValid)
@@ -128,7 +129,7 @@ namespace DevSkill.Inventory.Web.Areas.Admin.Controllers
 
             return View(model);
         }
-        [HttpPost,ValidateAntiForgeryToken]
+        [HttpPost,ValidateAntiForgeryToken, Authorize(Policy = "UserAddPermission")]
         public IActionResult Delete(Guid id)
         {
             try
